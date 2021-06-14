@@ -7,15 +7,15 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="Nomad Teacher">
+  <meta property="og:type" content="Personal Site">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -25,17 +25,98 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+  <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex flex-col items-center w-full max-w-xs p-4 bg-white rounded-3xl md:flex-row">
+      <div class="-mt-28 md:-my-16 md:-ml-32" style="clip-path: url(#roundedPolygon)">
+        <img class="w-auto h-80" src="img/profile.svg" alt="Nomad Teacher" />
+      </div>
+      <div class="flex flex-col space-y-4">
+        <div class="flex flex-col items-center md:items-start">
+          <h2 class="text-xl font-medium">Nomad Teacher</h2>
+          <p class="text-base font-medium text-gray-400">Spanish Teacher</p>
+        </div>
+        <div class="flex items-center justify-center space-x-3 md:justify-start">
+          <!-- Icons source => https://boxicons.com/ -->
+          <a href="mailto:info@nomadteacher.es" target="_blank" class="transition-transform transform hover:scale-125">
+            <span class="sr-only">Email</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+              <path
+                d="M20,4H6C4.897,4,4,4.897,4,6v5h2V8l6.4,4.8c0.178,0.133,0.389,0.2,0.6,0.2s0.422-0.067,0.6-0.2L20,8v9h-8v2h8 c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M13,10.75L6.666,6h12.668L13,10.75z">
+              </path>
+              <path d="M2 12H9V14H2zM4 15H10V17H4zM7 18H11V20H7z"></path>
+            </svg>
+          </a>
+          <a href="skype:nomadteacher" target="_blank" class="transition-transform transform hover:scale-125">
+            <span class="sr-only">Skype</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+              <path
+                d="M12.857,17.417c-2.947,0-4.294-1.524-4.294-2.641c0-0.266,0.108-0.521,0.298-0.705 c0.19-0.183,0.447-0.279,0.71-0.264c1.261,0,0.931,1.92,3.286,1.92c1.203,0,1.91-0.736,1.91-1.425 c0-0.415-0.234-0.889-1.028-1.079l-2.629-0.673c-2.111-0.545-2.479-1.737-2.479-2.842c0-2.293,2.068-3.124,4.036-3.124 c1.814,0,3.97,1.016,3.97,2.391c0,0.592-0.488,0.91-1.055,0.91c-1.078,0-0.897-1.536-3.063-1.536c-1.077,0-1.645,0.513-1.645,1.23 c0,0.717,0.839,0.96,1.574,1.123l1.941,0.445c2.126,0.486,2.691,1.751,2.691,2.963c0,1.865-1.423,3.305-4.226,3.305 M20.993,13.473c0.086-0.49,0.128-0.986,0.128-1.482c0.01-2.495-1.071-4.866-2.952-6.474c-1.879-1.609-4.365-2.288-6.788-1.856 C10.638,3.226,9.794,2.998,8.935,3c-1.763,0.01-3.387,0.97-4.27,2.519C3.784,7.068,3.778,8.976,4.65,10.53 c-0.487,2.714,0.366,5.497,2.282,7.453c1.917,1.955,4.655,2.835,7.333,2.355c0.743,0.435,1.586,0.663,2.443,0.662 c1.764-0.011,3.386-0.97,4.269-2.518C21.859,16.934,21.866,15.027,20.993,13.473"
+                transform="translate(-1)"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- rounded polygon generator => https://weareoutman.github.io/rounded-polygon/ -->
+        <!-- polygon size 190 * 190 almost the same size as the image -->
+        <clipPath id="roundedPolygon">
+          <path stroke="none" fill="#20be86"
+            d="M206.5 14.386751345948a10 10 0 0 1 10 0l163.20508075689 94.226497308104a10 10 0 0 1 5 8.6602540378444l0 188.45299461621a10 10 0 0 1 -5 8.6602540378444l-163.20508075689 94.226497308104a10 10 0 0 1 -10 0l-163.20508075689 -94.226497308104a10 10 0 0 1 -5 -8.6602540378444l3.0014151239499e-13 -188.45299461621a10 10 0 0 1 5 -8.6602540378444">
+          </path>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+
+  <div class="fixed w-full bottom-5 flex justify-between items-center pl-2 pr-5 space-x-4">
+    <div>
+      <a class="px-5 text-gray-600" href="#">Copyright Nomad Teacher 2021, all rights reserved</a>
+      <a class="text-gray-500" href="https://storyset.com/online">Online illustrations by Storyset</a>
+    </div>
+    <div class="flex flex-row">
+      <a href="mailto:info@nomadteacher.es" target="_blank" class="transition-transform transform hover:scale-125">
+        <span class="sr-only">Email</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+          <path
+            d="M20,4H6C4.897,4,4,4.897,4,6v5h2V8l6.4,4.8c0.178,0.133,0.389,0.2,0.6,0.2s0.422-0.067,0.6-0.2L20,8v9h-8v2h8 c1.103,0,2-0.897,2-2V6C22,4.897,21.103,4,20,4z M13,10.75L6.666,6h12.668L13,10.75z">
+          </path>
+          <path d="M2 12H9V14H2zM4 15H10V17H4zM7 18H11V20H7z"></path>
+        </svg>
+      </a>
+      <a href="skype:nomadteacher" target="_blank" class="transition-transform transform hover:scale-125">
+        <span class="sr-only">Skype</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+          <path
+            d="M12.857,17.417c-2.947,0-4.294-1.524-4.294-2.641c0-0.266,0.108-0.521,0.298-0.705 c0.19-0.183,0.447-0.279,0.71-0.264c1.261,0,0.931,1.92,3.286,1.92c1.203,0,1.91-0.736,1.91-1.425 c0-0.415-0.234-0.889-1.028-1.079l-2.629-0.673c-2.111-0.545-2.479-1.737-2.479-2.842c0-2.293,2.068-3.124,4.036-3.124 c1.814,0,3.97,1.016,3.97,2.391c0,0.592-0.488,0.91-1.055,0.91c-1.078,0-0.897-1.536-3.063-1.536c-1.077,0-1.645,0.513-1.645,1.23 c0,0.717,0.839,0.96,1.574,1.123l1.941,0.445c2.126,0.486,2.691,1.751,2.691,2.963c0,1.865-1.423,3.305-4.226,3.305 M20.993,13.473c0.086-0.49,0.128-0.986,0.128-1.482c0.01-2.495-1.071-4.866-2.952-6.474c-1.879-1.609-4.365-2.288-6.788-1.856 C10.638,3.226,9.794,2.998,8.935,3c-1.763,0.01-3.387,0.97-4.27,2.519C3.784,7.068,3.778,8.976,4.65,10.53 c-0.487,2.714,0.366,5.497,2.282,7.453c1.917,1.955,4.655,2.835,7.333,2.355c0.743,0.435,1.586,0.663,2.443,0.662 c1.764-0.011,3.386-0.97,4.269-2.518C21.859,16.934,21.866,15.027,20.993,13.473"
+            transform="translate(-1)"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  -->
+  <!--<script src="https://www.google-analytics.com/analytics.js" async></script>-->
 </body>
 
 </html>
